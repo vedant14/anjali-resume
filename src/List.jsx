@@ -1,11 +1,10 @@
-import React from "react";
 import { items } from "./data";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
-function Card({ id, title, category, theme }) {
+function Card({ id, title, category }) {
   return (
-    <li className={`card ${theme}`}>
+    <li className={`card`}>
       <div className="card-content-container">
         <motion.div className="card-content" layoutId={`card-container-${id}`}>
           <motion.div

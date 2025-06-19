@@ -1,6 +1,4 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { LoremIpsum } from "react-lorem-ipsum";
+import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import { items } from "./data";
 
@@ -19,7 +17,7 @@ export function Item({ id }) {
       >
         <Link to="/" />
       </motion.div>
-      <div className="card-content-container open">
+      <div className="open card-content-container">
         <motion.div className="card-content" layoutId={`card-container-${id}`}>
           <motion.div
             className="card-image-container"
@@ -35,11 +33,7 @@ export function Item({ id }) {
             <h2>{title}</h2>
           </motion.div>
           <motion.div className="content-container" animate>
-            <LoremIpsum
-              p={6}
-              avgWordsPerSentence={6}
-              avgSentencesPerParagraph={4}
-            />
+            VEDANT
           </motion.div>
         </motion.div>
       </div>
