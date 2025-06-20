@@ -2,9 +2,15 @@ import { items } from "./data";
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 
-function Card({ id, title, category }) {
+function Card({ id, title, category, isSelected, zIndex }) {
+  console.log(isSelected);
   return (
-    <li className={`card`}>
+    <li
+      className={`card`}
+      style={{
+        zIndex: isSelected ? zIndex : 0,
+      }}
+    >
       <div className="card-content-container">
         <motion.div className="card-content" layoutId={`card-container-${id}`}>
           <motion.div
@@ -30,9 +36,17 @@ function Card({ id, title, category }) {
 export function List({ selectedId }) {
   return (
     <ul className="card-list">
-      {items.map((card) => (
-        <Card key={card.id} {...card} isSelected={card.id === selectedId} />
-      ))}
+      {items.map((card) => {
+        const cardZIndex = 1;
+        return (
+          <Card
+            key={card.id}
+            {...card}
+            isSelected={card.id === selectedId}
+            zIndex={cardZIndex}
+          />
+        );
+      })}
     </ul>
   );
 }

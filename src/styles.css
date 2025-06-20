@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 .App {
   font-family: sans-serif;
   text-align: center;
@@ -6,7 +8,6 @@
 body {
   margin: 0;
   padding: 0;
-  background: black;
   overflow-y: scroll;
   --secondary: rgb(161, 161, 161);
   --divider: #343434;
@@ -50,21 +51,6 @@ h1 {
 header {
   border-bottom: 1px solid var(--divider);
   position: relative;
-}
-
-.avatar {
-  background: var(--divider);
-  border-radius: 50%;
-  position: absolute;
-  bottom: 12px;
-  right: 0;
-  overflow: hidden;
-}
-
-.avatar,
-.avatar img {
-  width: 40px;
-  height: 40px;
 }
 
 ul,
@@ -186,14 +172,11 @@ h2 {
 .overlay {
   z-index: 1;
   position: fixed;
-  background: rgba(0, 0, 0, 0.8);
-  will-change: opacity;
+  @apply bg-gray-100;
   top: 0;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0%;
   width: 100%;
-  max-width: 990px;
 }
 
 .overlay a {
@@ -203,7 +186,6 @@ h2 {
   bottom: 0;
   width: 100vw;
   left: 50%;
-
   transform: translateX(-50%);
 }
 
