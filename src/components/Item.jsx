@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
-import { items } from "./data";
+import { items } from "../data";
 
 export function Item({ id }) {
   const { category, title } = items.find((item) => item.id === id);

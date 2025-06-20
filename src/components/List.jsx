@@ -1,4 +1,4 @@
-import { items } from "./data";
+import { items } from "../data";
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 

@@ -1,6 +1,6 @@
 import { SEO } from "./components/SEO";
-import { Header } from "./Header";
-import Store from "./Store"; // Import the refactored Store component
+import Store from "./components/Store";
+import Footer from "./components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function App() {
@@ -8,11 +8,11 @@ export default function App() {
     <div className="container">
       <SEO />
       <Router>
-        <Header />
         <Routes>
           <Route path="/:id" element={<Store />} />
           <Route path="/" element={<Store />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
