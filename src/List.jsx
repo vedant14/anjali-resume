@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 
 function Card({ id, title, category, isSelected, zIndex }) {
-  console.log(isSelected);
   return (
     <li
       className={`card`}

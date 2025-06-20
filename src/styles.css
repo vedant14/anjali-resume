@@ -36,23 +36,6 @@ body {
   padding: 45px 25px;
 }
 
-h1 {
-  font-weight: bold;
-  color: white;
-  margin: 6px 0 12px;
-}
-
-.date {
-  color: var(--secondary);
-  font-size: 14px;
-  text-transform: uppercase;
-}
-
-header {
-  border-bottom: 1px solid var(--divider);
-  position: relative;
-}
-
 ul,
 li {
   list-style: none;
