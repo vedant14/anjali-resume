@@ -27,7 +27,7 @@ export function Item({ id }) {
               className="card-image-container"
               layoutId={`card-image-container-${id}`}
             >
-              <img className="card-image" src={`images/${id}.jpg`} alt="" />
+              <img className="w-fit h-100 object-cover" src={`images/${id}.jpg`} alt="" />
             </motion.div>
             <motion.div
               className="title-container"
@@ -37,8 +37,19 @@ export function Item({ id }) {
               <h2>{title}</h2>
             </motion.div>
           </div>
-          <motion.div className="content-container" animate>
-            VEDANT
+          <motion.div
+            className="content-container bg-gray-50"
+            initial={{ opacity: 0 }}
+            transition={{ duration: 0.4, delay: 0.4 }}
+            animate={{ opacity: 1 }}
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
           </motion.div>
         </motion.div>
       </div>

@@ -16,7 +16,7 @@ function Card({ id, title, category, isSelected, zIndex }) {
             className="card-image-container"
             layoutId={`card-image-container-${id}`}
           >
-            <img className="card-image" src={`images/${id}.jpg`} alt="" />
+            <img className="w-fit h-100 object-cover" src={`images/${id}.jpg`} alt="" />
           </motion.div>
           <motion.div
             className="title-container"
