@@ -12,22 +12,18 @@ export function SocialLinks() {
   return (
     <div className="my-6 flex gap-6">
       <SocialLink
-        href="https://twitter.com"
+        to="https://twitter.com"
         aria-label="Follow on Twitter"
         icon={TwitterIcon}
       />
       <SocialLink
-        href="https://instagram.com"
+        to="https://instagram.com"
         aria-label="Follow on Instagram"
         icon={InstagramIcon}
       />
       <SocialLink
-        href="https://github.com"
-        aria-label="Follow on GitHub"
-        icon={GitHubIcon}
-      />
-      <SocialLink
-        href="https://linkedin.com"
+        to="https://www.linkedin.com/in/anjali-barai-8772b8158/"
+        target="_blank"
         aria-label="Follow on LinkedIn"
         icon={LinkedInIcon}
       />
