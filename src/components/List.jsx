@@ -25,7 +25,7 @@ function Card({
             layoutId={`card-image-container-${id}`}
           >
             <img
-              className="w-fit h-100 object-right"
+              className="w-fit h-100 object-cover"
               src={`images/${id}.jpg`}
               alt=""
             />
