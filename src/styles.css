@@ -19,6 +19,11 @@ h1 {
     "Oxygen";
 }
 
+.font-zain {
+  font-family: Zain, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen";
+}
+
 body {
   font-family: Noto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
     "Oxygen";
@@ -33,6 +38,7 @@ body {
 }
 
 .container {
+  margin: auto;
   max-width: 990px;
   flex: 1 1 100%;
   padding: 45px 25px;

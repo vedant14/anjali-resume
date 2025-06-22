@@ -1,3 +1,5 @@
+import { motion } from "motion/react";
+import { Flower1 } from "./Flower";
 import { classNames } from "./Helper";
 import { SocialLinks } from "./SocialLinks";
 import avatarImage from "/avatar.jpeg";
@@ -5,16 +7,25 @@ import avatarImage from "/avatar.jpeg";
 export const Header = () => (
   <div className="mt-12">
     <div className="max-w-3xl">
-      <div className="flex gap-3 items-center">
+      <div className="flex gap-2 items-center">
         <Avatar />
         <h1 className="text-4xl font-bold tracking-wide text-zinc-800 sm:text-5xl mt-2.5">
           Anjali Barai
         </h1>
+        <motion.div
+          animate={{
+            rotate: 1440,
+          }}
+          whileHover={{ rotate: 720 }}
+          transition={{ duration: 4, ease: "linear" }}
+        >
+          <Flower1 className="h-6 w-6" />
+        </motion.div>
       </div>
       <p className="mt-2 text-base text-zinc-700">
-        A software designer and entrepreneur based in New York City. I’m the
-        founder and CEO of Planetaria, where we develop technologies that
-        empower regular people to explore space on their own terms.
+        Basically a generalist. There have been days when I have done sales,
+        marketing, partnerships and nights & weekends, when I've dabbled in art,
+        design, pottery.
       </p>
       <SocialLinks />
     </div>

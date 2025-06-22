@@ -1,31 +1,41 @@
 import { Link } from "react-router-dom";
 
-function SocialLink({ icon: Icon, ...props }) {
+function SocialLink({ icon: Icon, props, className }) {
   return (
     <Link className="group -m-1 p-1" {...props}>
-      <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
+      <Icon className={`h-5 w-5 transition ${className}`} />
     </Link>
   );
 }
 
 export function SocialLinks() {
   return (
-    <div className="my-6 flex gap-6">
+    <div className="my-6 flex gap-4">
       <SocialLink
-        to="https://twitter.com"
-        aria-label="Follow on Twitter"
-        icon={TwitterIcon}
-      />
-      <SocialLink
-        to="https://instagram.com"
-        aria-label="Follow on Instagram"
-        icon={InstagramIcon}
+        to="https://www.linkedin.com/in/anjali-barai-8772b8158/"
+        target="_blank"
+        aria-label="Follow on LinkedIn"
+        icon={MailIcon}
+        className="stroke-zinc-500 group-hover:stroke-zinc-600"
       />
       <SocialLink
         to="https://www.linkedin.com/in/anjali-barai-8772b8158/"
         target="_blank"
         aria-label="Follow on LinkedIn"
         icon={LinkedInIcon}
+        className="fill-zinc-500 group-hover:fill-zinc-600"
+      />
+      <SocialLink
+        to="https://x.com/anjali_barai"
+        aria-label="Follow on Twitter"
+        icon={TwitterIcon}
+        className="fill-zinc-500 group-hover:fill-zinc-600"
+      />
+      <SocialLink
+        to="https://www.instagram.com/anjalibarai/"
+        aria-label="Follow on Instagram"
+        icon={InstagramIcon}
+        className="fill-zinc-500 group-hover:fill-zinc-600"
       />
     </div>
   );
@@ -35,6 +45,18 @@ export function TwitterIcon(props) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
       <path d="M20.055 7.983c.011.174.011.347.011.523 0 5.338-3.92 11.494-11.09 11.494v-.003A10.755 10.755 0 0 1 3 18.186c.308.038.618.057.928.058a7.655 7.655 0 0 0 4.841-1.733c-1.668-.032-3.13-1.16-3.642-2.805a3.753 3.753 0 0 0 1.76-.07C5.07 13.256 3.76 11.6 3.76 9.676v-.05a3.77 3.77 0 0 0 1.77.505C3.816 8.945 3.288 6.583 4.322 4.737c1.98 2.524 4.9 4.058 8.034 4.22a4.137 4.137 0 0 1 1.128-3.86A3.807 3.807 0 0 1 19 5.274a7.657 7.657 0 0 0 2.475-.98c-.29.934-.9 1.729-1.713 2.233A7.54 7.54 0 0 0 22 5.89a8.084 8.084 0 0 1-1.945 2.093Z" />
+    </svg>
+  );
+}
+
+export function MailIcon(props) {
+  return (
+    <svg fill="none" viewBox="0 0 24 24" strokeWidth={2} {...props}>
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+      />
     </svg>
   );
 }
