@@ -141,12 +141,6 @@ h2 {
   margin: 8px 0;
 }
 
-.category {
-  color: #fff;
-  font-size: 14px;
-  text-transform: uppercase;
-}
-
 .overlay {
   z-index: 1;
   position: fixed;

@@ -70,8 +70,15 @@ export function Item({ id }) {
               className="title-container"
               layoutId={`title-container-${id}`}
             >
-              <span className="category">{category}</span>
-              <h2>{title}</h2>
+              <span
+                className="text-xs px-2 py-0.5 rounded-full"
+                style={{ backgroundColor: backgroundColor, color: textColor }}
+              >
+                {category}
+              </span>
+              <p className="mt-1" style={{ color: backgroundColor }}>
+                {title}
+              </p>
             </motion.div>
           </div>
           <motion.div

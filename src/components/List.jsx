@@ -2,7 +2,15 @@ import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 import items from "../data";
 
-function Card({ id, title, category, isSelected, zIndex }) {
+function Card({
+  id,
+  title,
+  category,
+  isSelected,
+  zIndex,
+  backgroundColor,
+  textColor,
+}) {
   return (
     <li
       className={`card`}
@@ -26,8 +34,13 @@ function Card({ id, title, category, isSelected, zIndex }) {
             className="title-container"
             layoutId={`title-container-${id}`}
           >
-            <span className="category">{category}</span>
-            <h2>{title}</h2>
+            <span
+              className="text-xs px-2 py-0.5 rounded-full"
+              style={{ backgroundColor: backgroundColor, color: textColor }}
+            >
+              {category}
+            </span>
+            <p className="mt-1" style={{ color: backgroundColor }}>{title}</p>
           </motion.div>
         </motion.div>
       </div>
