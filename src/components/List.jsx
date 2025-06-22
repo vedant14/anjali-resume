@@ -1,6 +1,6 @@
-import { items } from "../data";
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
+import items from "../data";
 
 function Card({ id, title, category, isSelected, zIndex }) {
   return (
@@ -16,7 +16,11 @@ function Card({ id, title, category, isSelected, zIndex }) {
             className="card-image-container"
             layoutId={`card-image-container-${id}`}
           >
-            <img className="w-fit h-100 object-cover" src={`images/${id}.jpg`} alt="" />
+            <img
+              className="w-fit h-100 object-right"
+              src={`images/${id}.jpg`}
+              alt=""
+            />
           </motion.div>
           <motion.div
             className="title-container"

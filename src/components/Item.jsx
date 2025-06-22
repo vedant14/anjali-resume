@@ -1,10 +1,43 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
-import { items } from "../data";
+import items from "../data";
+const listContainerVariants = {
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+      when: "beforeChildren",
+    },
+  },
+  hidden: {
+    opacity: 0,
+    transition: {
+      staggerChildren: 0.05,
+      staggerDirection: -1,
+    },
+  },
+};
 
+const listItemVariants = {
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      y: { stiffness: 1000, velocity: -100 },
+    },
+  },
+  hidden: {
+    y: 50,
+    opacity: 0,
+    transition: {
+      y: { stiffness: 1000 },
+    },
+  },
+};
 export function Item({ id }) {
-  const { category, title } = items.find((item) => item.id === id);
-
+  const { category, title, backgroundColor, textColor, text } = items.find(
+    (item) => item.id === id
+  );
   return (
     <>
       <motion.div
@@ -27,7 +60,11 @@ export function Item({ id }) {
               className="card-image-container"
               layoutId={`card-image-container-${id}`}
             >
-              <img className="w-fit h-100 object-cover" src={`images/${id}.jpg`} alt="" />
+              <img
+                className="h-100 object-cover"
+                src={`images/${id}.jpg`}
+                alt=""
+              />
             </motion.div>
             <motion.div
               className="title-container"
@@ -38,18 +75,27 @@ export function Item({ id }) {
             </motion.div>
           </div>
           <motion.div
-            className="content-container bg-gray-50"
+            className="pt-[360px] px-5 pb-6 bg-gray-50"
             initial={{ opacity: 0 }}
             transition={{ duration: 0.4, delay: 0.4 }}
             animate={{ opacity: 1 }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            <motion.ul
+              className="list-disc ml-5"
+              variants={listContainerVariants}
+              initial="hidden"
+              animate="visible"
+            >
+              {text.map((line, i) => (
+                <motion.li
+                  className="mt-2 text-base"
+                  key={i}
+                  variants={listItemVariants}
+                >
+                  {line}
+                </motion.li>
+              ))}
+            </motion.ul>
           </motion.div>
         </motion.div>
       </div>

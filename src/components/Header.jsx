@@ -37,7 +37,7 @@ function Avatar({ large = false, className, ...props }) {
           "rounded-full bg-zinc-100 object-cover hover:shadow-lg",
           large ? "h-24 w-24" : "h-12 w-12"
         )}
-        priority
+        priority="true"
       />
     </div>
   );
