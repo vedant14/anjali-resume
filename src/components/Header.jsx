@@ -28,7 +28,7 @@ export const Header = () => (
         </p>
         <p className="text-zinc-600 text-sm">
           There have been days when I have worked hand-in-hand with CEOs and
-          business leaders to sales, marketing, partnerships, lead fundraising
+          business leaders to do sales, marketing, partnerships, lead fundraising
           efforts and scale digital platforms.
           <br />
           And by nights & on weekends, I've dabbled in with my paper & paints.
