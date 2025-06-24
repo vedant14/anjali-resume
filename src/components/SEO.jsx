@@ -13,6 +13,12 @@ export function SEO({ title, description }) {
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content="Anjali Barai" />
       <meta property="og:title" content={finalTitle} />
+      <script
+        src="https://script.refix.ai/script.min.js"
+        type="text/javascript"
+        data-refix-token="4052d6d7-02bb-42fe-8fbb-d739a84a2024"
+        defer
+      ></script>
       <meta property="og:description" content={finalDescription} />
     </Helmet>
   );
