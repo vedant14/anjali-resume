@@ -22,11 +22,18 @@ export const Header = () => (
           <Flower1 className="h-6 w-6" />
         </motion.div>
       </div>
-      <p className="mt-2 text-base text-zinc-700">
-        Basically a generalist. There have been days when I have done sales,
-        marketing, partnerships and nights & weekends, when I've dabbled in art,
-        design, pottery.
-      </p>
+      <div className="mt-2">
+        <p className="italic text-zinc-500 font-zain text-lg">
+          "I think that women wear so many hats, that we're not just one thing."
+        </p>
+        <p className="text-zinc-600 text-sm">
+          There have been days when I have worked hand-in-hand with CEOs and
+          business leaders to sales, marketing, partnerships, lead fundraising
+          efforts and scale digital platforms.
+          <br />
+          And by nights & on weekends, I've dabbled in with my paper & paints.
+        </p>
+      </div>
       <SocialLinks />
     </div>
   </div>

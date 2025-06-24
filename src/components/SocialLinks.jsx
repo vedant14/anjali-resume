@@ -1,10 +1,8 @@
-import { Link } from "react-router-dom";
-
-function SocialLink({ icon: Icon, props, className }) {
+function SocialLink({ icon: Icon, href, className }) {
   return (
-    <Link className="group -m-1 p-1" {...props}>
+    <a className="group -m-1 p-1 cursor-pointer" href={href} target="_blank">
       <Icon className={`h-5 w-5 transition ${className}`} />
-    </Link>
+    </a>
   );
 }
 
@@ -12,28 +10,23 @@ export function SocialLinks() {
   return (
     <div className="my-6 flex gap-4">
       <SocialLink
-        to="https://www.linkedin.com/in/anjali-barai-8772b8158/"
-        target="_blank"
-        aria-label="Follow on LinkedIn"
+        href="https://www.linkedin.com/in/anjali-barai-8772b8158/"
         icon={MailIcon}
         className="stroke-zinc-500 group-hover:stroke-zinc-600"
       />
       <SocialLink
-        to="https://www.linkedin.com/in/anjali-barai-8772b8158/"
+        href="https://www.linkedin.com/in/anjali-barai-8772b8158/"
         target="_blank"
-        aria-label="Follow on LinkedIn"
         icon={LinkedInIcon}
         className="fill-zinc-500 group-hover:fill-zinc-600"
       />
       <SocialLink
-        to="https://x.com/anjali_barai"
-        aria-label="Follow on Twitter"
+        href="https://x.com/anjali_barai"
         icon={TwitterIcon}
         className="fill-zinc-500 group-hover:fill-zinc-600"
       />
       <SocialLink
-        to="https://www.instagram.com/anjalibarai/"
-        aria-label="Follow on Instagram"
+        href="https://www.instagram.com/anjalibarai/"
         icon={InstagramIcon}
         className="fill-zinc-500 group-hover:fill-zinc-600"
       />

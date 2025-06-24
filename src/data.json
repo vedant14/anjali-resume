@@ -2,93 +2,94 @@
   {
     "id": "yubi",
     "category": "Yubi",
-    "title": "Scaling NeoBank Partnerships",
-    "pointOfInterest": 80,
+    "title": "Scaling Yubi's DLP program",
     "backgroundColor": "#fff",
     "textColor": "000",
     "text": [
-      "Led end-to-end commercial discussions, negotiations, and contract closures with partners ensuring business alignment, onboarded 10+ partners and ensured 8 successful go-lives.",
-      "Drove 100:0 lending partnerships growth by identifying and establishing strategic partnerships with key industry players based on policy and workflow compatibility."
+      "One of the biggest fintechs of the country, I have been with Yubi for over 3 years, working with multiple teams",
+      "Most recently, I worked with the DLP team, stiching together partnerships between fintechs (Ola, GooglePay, Clear), NBFCs (ABFL, KreditBee) and Banks (Axis, CBI).",
+      "Received the Extra Miler and Team Player awards at Yubi in 2024, Yayy!"
     ]
   },
   {
     "id": "yubi-2",
     "category": "Yubi",
     "title": "Managing Enterprises",
-    "pointOfInterest": 120,
     "backgroundColor": "#70435B",
     "textColor": "#F1CCB2",
     "text": [
-      "Led the digitization of Co-lending, Supply Chain Finance, and Collections initiatives for PSU banks, collaborating with internal and external teams.",
-      "Drove revenue growth by securing sign-offs from 12 NBFCs and 4 Anchors for Co-lending and SCF. Took  2 NBFCs and 3 Anchors live, enabling ₹400+ crore in disbursements."
+      "Before DLP, I was working with our bonds team, where we pioneered a new bonds platform.",
+      "I onboarded several multiple wealth partners to drive our business adoption and revenue goals."
     ]
   },
   {
     "id": "signable",
     "category": "Signable",
-    "title": "Launch mobile app",
-    "pointOfInterest": 260,
+    "title": "Mobile app launch & funding talks",
     "backgroundColor": "#F3DCBB",
     "textColor": "#2C596E",
     "text": [
-      "Drove 100:0 lending partnerships growth by identifying and establishing strategic partnerships with key industry players based on policy and workflow compatibility."
+      "Worked with founders on GTM strategies, driving 5000+ downloads within 60 days on Google Play Store.",
+      "Planned and executed targeted campaigns, increasing engagement by 200%. Conducted user research to develop pricing plans and competitive research to suggest product improvements.",
+      "Led fundraising efforts, securing funding proposals from top organizations like GSMA."
     ]
   },
   {
     "id": "x",
     "category": "GrowthX",
-    "title": "Seriously the Only Escape is the Stratosphere",
-    "pointOfInterest": 260,
+    "title": "Leveling Up!",
     "backgroundColor": "#1C1A1D",
     "textColor": "#B6ABA4",
     "text": [
-      "Drove 100:0 lending partnerships growth by identifying and establishing strategic partnerships with key industry players based on policy and workflow compatibility."
+      "Learned to fuse marketing, business & design together.",
+      "Worked on real world customer acquistion, retention & monetisation problems with top industry professionals.",
+      "Also found a great network out of it"
     ]
   },
   {
     "id": "homzhub",
     "category": "Homzhub",
     "title": "Founding team",
-    "pointOfInterest": 200,
     "backgroundColor": "#016C38",
     "textColor": "#BDC7B4",
     "text": [
-      "Drove 100:0 lending partnerships growth by identifying and establishing strategic partnerships with key industry players based on policy and workflow compatibility."
+      "Most of the hats I wore, were created here:)",
+      "Part of the founding team, we scaled a small startup from Nagpur to multiple tier-1 cities until covid changed our trajectory for the worse",
+      "Mainly owned the marketing and sales engines to create better acquisition for our product and services."
     ]
   },
   {
     "id": "mad",
     "category": "Make a Difference",
     "title": "City Manager for Non-Profit",
-    "pointOfInterest": 150,
     "backgroundColor": "#FFFFFF",
     "textColor": "#AB2F37",
     "text": [
-      "Drove 100:0 lending partnerships growth by identifying and establishing strategic partnerships with key industry players based on policy and workflow compatibility."
+      "Volunteered for 4 years with this amazing org, honestly got more back than I gave",
+      "Recruited & trained over 300 city volunteers for my City",
+      "Led the Transition Readiness Team, guiding underprivileged youth through career transition."
     ]
   },
   {
     "id": "mapro",
     "category": "Mapro",
     "title": "Creating delicious experiences",
-    "pointOfInterest": 60,
     "backgroundColor": "#1C1A1D",
     "textColor": "#B6ABA4",
     "text": [
       "A giant in the FMCG sector, Mapro’s main offerings are fruit jams, syrups, etc.",
-      "I joined Mapro as part of my summer internship program and worked with the team to grow their online presence.",
-      "Drove 100:0 lending partnerships growth by identifying and establishing strategic partnerships with key industry players based on policy and workflow compatibility."
+      "I interned here as part of my summer internship program.",
+      "Designed and executed online and offline campaigns, expanded SM account reach by 106%, and content engagement by 118%"
     ]
   },
   {
     "id": "mba",
     "category": "MBA",
-    "title": "Yes, They Are Sociopaths",
-    "pointOfInterest": 200,
+    "title": "Institute of Rural Management",
     "backgroundColor": "#E1A727",
     "textColor": "#02587F",
     "text": [
-      "Drove 100:0 lending partnerships growth by identifying and establishing strategic partnerships with key industry players based on policy and workflow compatibility."
+      "Graduated from IRMA, learned to use words like Synergy, Pivot, Scalability in real life situations."
     ]
   }
 ]

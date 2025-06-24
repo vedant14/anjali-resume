@@ -95,7 +95,7 @@ export function Item({ id }) {
             >
               {text.map((line, i) => (
                 <motion.li
-                  className="mt-2 text-base"
+                  className="mt-2 text-sm"
                   key={i}
                   variants={listItemVariants}
                 >
